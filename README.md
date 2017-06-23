@@ -10,7 +10,9 @@
 `const miner = require('@polkajs/miner');`
 
 ``` javascript
+miner.proofOfWork();
 
+miner.verify();
 ```
 
 
