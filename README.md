@@ -1,13 +1,13 @@
-# miner-zion-coin [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![Greenkeeper badge](https://badges.greenkeeper.io/zion-coin/miner-zion-coin.svg)](https://greenkeeper.io/)
+# miner [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![Greenkeeper badge](https://badges.greenkeeper.io/PolkaJS/miner.svg)](https://greenkeeper.io/)
 
-[travis-image]: https://travis-ci.org/zion-coin/miner-zion-coin.svg?branch=master
-[travis-url]: https://travis-ci.org/zion-coin/miner-zion-coin
-[npm-image]: https://img.shields.io/npm/v/miner-zion-coin.svg
-[npm-url]: https://npmjs.org/package/miner-zion-coin
-[downloads-image]: https://img.shields.io/npm/dm/miner-zion-coin.svg
-[downloads-url]: https://npmjs.org/package/miner-zion-coin
+[travis-image]: https://travis-ci.org/PolkaJS/miner.svg?branch=master
+[travis-url]: https://travis-ci.org/PolkaJS/miner
+[npm-image]: https://img.shields.io/npm/v/@polkajs/miner.svg
+[npm-url]: https://npmjs.org/package/@polkajs/miner
+[downloads-image]: https://img.shields.io/npm/dm/@polkajs/miner.svg
+[downloads-url]: https://npmjs.org/package/@polkajs/miner
 
-`const miner = require('miner-zion-coin');`
+`const miner = require('@polkajs/miner');`
 
 ``` javascript
 

@@ -1,5 +1,5 @@
 {
-  "name": "miner-zion-coin",
+  "name": "@polkajs/miner",
   "version": "1.2.14",
   "description": "Simple Proof-of-Work miner algorithm",
   "main": "./lib/proofOfWork.js",
@@ -22,7 +22,6 @@
     "babel-preset-flow": "^6.23.0",
     "eslint": "^3.19.0",
     "flow-bin": "^0.48.0",
-    "random-words": "0.0.1",
     "tape": "^4.6.3"
   }
 }
