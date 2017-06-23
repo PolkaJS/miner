@@ -13,6 +13,7 @@
 miner.proofOfWork();
 
 miner.verify();
+
 ```
 
 
