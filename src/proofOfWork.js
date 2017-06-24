@@ -1,7 +1,7 @@
 // @flow
 const SHA3    = require('sha3');
 const bencode = require('bencode');
-const bigInt  = require('big-integer');
+const bigInt  = require('bignumber.js');
 
 interface Input {
   transactionHash: string,

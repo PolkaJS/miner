@@ -7,21 +7,23 @@
 const NS_PER_SEC  = 1e9;
 const SHA3        = require('sha3');
 const randomWords = require('random-words');
-const miner       = require('./src/proofOfWork');
+const miner       = require('./lib/proofOfWork');
 
-const MAX_DIFFICULTY  = 21;
+const MAX_DIFFICULTY  = 14;
 const HASHES_PER_TEST = 10;
 
 let arr = [];
 
 // go up to 20 bits for now
-for (let x = 20; x <= MAX_DIFFICULTY; x++) {
+for (let x = 0; x <= MAX_DIFFICULTY; x++) {
   // setup a timer and track averages for the average
   let average_time = 0,
       time_start,
       time_end,
       solution = 0
       hashes_per_sec = 0;
+
+  console.log("difficulty:", x);
   // run the same situation 10 times and take the average
   for (let y = 0; y < HASHES_PER_TEST; y++) {
     time_start = process.hrtime();
