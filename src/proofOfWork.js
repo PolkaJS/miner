@@ -38,16 +38,15 @@ function proofOfWork(payload: Array<Transaction> | string, target: number, nonce
     nonce++;
     solution = parseInt(
       toBinary(
-        new SHA3.SHA3Hash()
+        new SHA3.SHA3Hash(256)
           .update(
-            new SHA3.SHA3Hash()
+            new SHA3.SHA3Hash(256)
               .update( payload + nonce )
               .digest()
           )
           .digest('hex')
       ).substr(0, target)
     , 10);
-    // console.log(solution)
   } while (solution)
 
   return nonce;
@@ -59,11 +58,11 @@ function verify(payload: Array<Transaction> | string, target: number, nonce: num
   if (Array.isArray(payload))
     payload = bencode.encode(payload);
 
-  solution = parseInt(
+  let solution = parseInt(
     toBinary(
-      new SHA3.SHA3Hash()
+      new SHA3.SHA3Hash(256)
         .update(
-          new SHA3.SHA3Hash()
+          new SHA3.SHA3Hash(256)
             .update( payload + nonce )
             .digest()
         )
@@ -74,7 +73,7 @@ function verify(payload: Array<Transaction> | string, target: number, nonce: num
   return (solution === 0) ? true : false;
 }
 
-function toBinary(input: Array<string>): string {
+function toBinary(input: string): string {
   return input.split('').map((c) => {
     return conversion(c);
   }).join('');
