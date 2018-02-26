@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/PolkaJS/miner#readme",
   "dependencies": {
-    "bencode": "^1.0.0",
+    "bencode": "^2.0.0",
     "big-integer": "^1.6.23",
     "bignumber.js": "^4.0.2",
     "random-words": "0.0.1",
