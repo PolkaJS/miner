@@ -24,7 +24,7 @@
     "bencode": "^1.0.0",
     "big-integer": "^1.6.23",
     "bignumber.js": "^4.0.2",
-    "random-words": "0.0.1",
+    "random-words": "1.1.0",
     "sha3": "^1.2.0"
   },
   "devDependencies": {
